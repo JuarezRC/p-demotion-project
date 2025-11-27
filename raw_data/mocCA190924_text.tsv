@@ -1,0 +1,108 @@
+text_id	sent_id	sentence	meaning	verb_in_sentence	val_type	P_arg	expression_type	deter_present	det_form	notes
+mocCA190924_1	1	waʔ  weɾaɲaːˈtʃikima  iko soleːntaqaˈtak  noɣoˈɾik so satʃiqotaˈɣe	bueno  gracias         estamos recordando el sufrimiento de donde venimos	remember	two-place	yes	nominal	no	not_applicable	
+mocCA190924_1	1			depart	one-place-ext	yes	morphological	no	not_applicable	
+mocCA190924_1	2	peɾoˈjem  ɲaqaˈwe naˈɣi wekaɲaːˈtʃik	pero yo todavía hoy tengo mi agradecimiento	exist	one-place	not_applicable	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	3	maˈsokaɾoʁoˈɾikʰ  soʔˈon qamqajˈkaka ʃinˈta  jimʁoɾaˈtom	nuestro sufrimiento me casé y no servía para nada yo era muy pobre	get.married	one-place	not_applicable	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	3			be_similar	one-place	not_applicable	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	4	qamnaˈɣi  ɲaβaɲiˈɣit daɲowenataʁak jim maʁaɾajk   ɲaːtʃik kalːoviɾaʁak  ɲiwaːnaˈtek doʔqoˈlek	hoy, sin embargo, hayé buena vida, yo estoy bien  Gracias por la llegada de mi conocido criollo	see	two-place	yes	nominal	yes	ɾa	
+mocCA190924_1	5	siempɾe loviɾqa najaʔa jim japaʁaɣintak  kama sasaʔden  naɣi sedaːnalo naltaʁajakoʔ  saʔdenataˈʁan	siempre llega a mi casa y me enseña de lo que yo no sé  hoy veo lo que él hablaba  pienso	transfer_knowledge	two-place	yes	sentential	yes	ka	
+mocCA190924_1	5			know	two-place	no	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	5			look	two-place	yes	nominal	yes	na	
+mocCA190924_1	5			know	two-place-taɢan_intr	no	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	6	kaiɾa ɾa weɾa ɲaʔaːtʃik weːta ina  ɲijaːlek            seloqotaˈɣit	y doy gracias que mi hijo está aquí también eh, Favio  que estoy enfrente	be	one-place	not_applicable	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	6			be_next_to	one-place-ext	yes	nominal	no	not_applicable	
+mocCA190924_1	7	siˈempɾe  ɲaqataʁantapɪɣɪɲi riqotʃiɣi lateʔe so qaɾoʁoɾik naɲaqa dosolkaeʔ so qaɾoʁoɾik naɲaqa dosolkaeʔ	siempre estoy hablando bien con su madre de nuestro sufrimiento cuando todavía eran dos	speak	one-place-aɢan_intr-ext	yes	nominal	no	not_applicable	
+mocCA190924_1	8	sopaɾaʁanteɣelekena ɲi lateː  isiɣiˈjaq  ɾoqotʃiɣiː isiɣijaq	yo casaba para su madre (cualquier) animal (cualquier) animal que se ve	hunt	one-place-ext	yes	nominal	yes	ñi	
+mocCA190924_1	9	kajqa ka siʃit qam  ɲaleː'sen da   nem naɣi  saqaːtaʁantak   saʁanek snqolonʁa	No podía hacer nada como hombre así como hoy estoy hablando  largé el miedo	can	two-place	no	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	9			speak	two-place-ɢan_intr	no	zero_anaphora	not_applicable	not_applicable	
+mocCA190924_1	9			let_free	two-place	yes	nominal	no	not_applicable	
+mocCA190924_1	10	sakontaβalo na ʃilqajaqa  ɲaβaɲiɣit anantʃikse  sakontaβalo na tʃikse	agarraba las iguanas,     encontraba nutria y cazaba nutria	take	two-place	yes	nominal	yes	na	
+mocCA190924_1	10			see	two-place	yes	nominal	yes	na	
+mocCA190924_1	10			see	two-place	yes	nominal	yes	na	
+mocCA190924_1	11	qaqa ka joʔʁoʁonqate  ʔam weka ipijaʁak ɾa sikijaʁanataʁan	No tenia arma y yo tenía fé que podia alimentar	eat	two-place-taɢan_intr	no	zero	not_applicable	not_applicable	
+mocCA190924_1	11	ma maʃijem taʔdosolqaeʔ nejaːlqa  so soleːntetake	porque yo soy padre y tego dos hijo eso recordaba	remember	two-place	no	zero	not_applicable	not_applicable	
+mocCA190924_1	12	qam ʃiketo da iβoʁoʁo  soʔenataʁantak  naʔuenahe nowenatek              saʔden'ta ke'ɾa noʔʁo'ɾik	y ahora sigo de mi preocupación y (sigo) haciendo todo tipo de trabajo  (y) sé del sufrimiento	move	one-place-ext	yes	nominal	yes	ɾa	
+mocCA190924_1	12			make	two-place-taɢan_intr	yes	nominal	yes	na	
+mocCA190924_1	12			know	two-place	yes	nominal	yes	ɾa	
+mocCA190924_1	13	qa̰ː we so naʁa ʒapil tɾeh ɲaʁaɾi ɾa seβetaɣe ɾa viʎa anxela	y habia un día que volví tres años estuve en Villa Ángela	exist	one-place	not_applicable	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	13			come_back	one-place	not_applicable	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	13			be	one-place-ext	yes	nominal	yes	ɾa	
+mocCA190924_1	14	treʰ  najaːlqo'qaɪʔ  doʰ jaːleʔ una ʔaːlo  ɲaːtˈʃik ɾanemnaˈɣi  jaq saqonaʁaɣit  qaʔatʃiɣeʁak	y tres  hijos dos varon y una mujer        gracias así como hoy recibimos la gracia (de Dios)	receive	two-place	yes	nominal	no	not_applicable	
+mocCA190924_1	15	naɣi ɲi jaːlek ɾa seloqotaɣit  maestɾo	y ahora mi hijo está conmingo  es maestro	be_next_to	one-place-ext	yes	nominal	no	not_applicable	
+mocCA190924_1	16	asoˈʎa jaːlˈqa ɲarelokitaʔˈpe  napaʁaɣinsaʔpɪɣa eˈsek  nadʒik maestɾo qa̰nta	tengo otras hijas que todavía están luchando están estudiando un camino de maestro también	fight	two-place	yes	sentential	no	not_applicable	
+mocCA190924_1	16			transfer_knowledge	two-place	yes	nominal	no	not_applicable	
+mocCA190924_1	17	saʔdenqata soʔe maestɾo  rapaʁinataʁan  ka sasaʔdeːnaq     qomiʔ jaʔdeːnataʁanaʁaneʔ	sabemos lo que es ser maestro enseña de lo que no sabemos  nos hace pensar a los dos	know	two-place	yes	nominal	yes	so	
+mocCA190924_1	17			transfer_knowledge	two-place-taɢan_intr	yes	sentential	yes	ka	
+mocCA190924_1	17			know	two-place	no	zero	not_applicable	na	
+mocCA190924_1	17			know	two-place-taɢan_intr-aɢan_tr	yes	pron_1st_pl	no	not_applicable	
+mocCA190924_1	18	ka tʃaqanem  naɣi ɾa staʁajaqotapiɣi noʁoɾik  satʃiqotaɣe  ka dʒapaʁaɣin	es igual  ahora que estamos recordando el sufrimiento de donde vengo  me enseñaba	talk	two-place-ext	yes	nominal	no	not_applicable	
+mocCA190924_1	18			depart	one-place-ext	yes	morphological	no	not_applicable	
+mocCA190924_1	18			transfer_knowledge	two-place	yes	sentential	no	not_applicable	
+mocCA190924_1	19	sakonalo na isiɣijako  peɾo itoʁo weɾa iwoʁo    we so naʁa ɲateːnalek so maɲikʰ	y yo atrapaba los animales  y yo me preucupava  había un día que encontré un ñandú	take	two-place	yes	nominal	yes	not_applicable	
+mocCA190924_1	19			exist	one-place	not_applicable	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	19			find	two-place	yes	nominal	yes	so	
+mocCA190924_1	20	qaqa ka iʁonqate    qapaʁanaʁajk ɲimoːtetaˈβa         sowaʁan saʔe maɲik  ka joʁonekʰ	(yo) no tenía arma  culeco       le llegaba despacito y le pegué al ñandú y lo casé	exist.neg	one-place	not_applicable	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	20			approach	two-place	yes	zero	not_applicable	not_applicable	
+mocCA190924_1	20			hit	two-place	yes	nominal	yes	saʔe	
+mocCA190924_1	21	peʔtaʔ qajaʔantak ama joʁoɾik itʃiɣiɲo̰ʔ  jim qojaːnem soʔe maɲik	tal vez veían como yo sufria por eso y medieron el ñandú	see	two-place	yes	nominal	no	not_applicable	
+mocCA190924_1	21			give	three-place	yes	nominal	yes	soʔe	
+mocCA190924_1	22	jole:nta'ʁat 'kan  saʔwe so ipaɾaʁanaʁaɾpi  maʃiˈhek ḛnβiʎˈanxela  joʁoˈɣe	y yo siempre recuerdo todo mis compañero casadores que ya fueron a villa angela  que ya paso	go	one-place	not_applicable	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	23	qam naɣi tʃisoleːntaʁantak naɣi  qaʔ saʔden ka noʁoɾik  kahe paɾaʁanaʁajk	y hoy solo estoy recordando y conozco el sufrimiento aquel casador	remember	two-place	yes	zero	not_applicable	not_applicable	
+mocCA190924_1	23			know	two-place	yes	nominal	yes	ka	
+mocCA190924_1	24	kaʔ iβoɾole jaβantʃiɣiɾiʔ jŏʔʁoɾik  qam naɣi saʔdenataʁan qajka ka joʁoɾek βaqaneloʁotek ajem	y mi esposa vio como yo sufria      y ahora pienso que yo ya no sufro más  que ami me despertaron	see	two-place	yes	nominal	no	not_applicable	
+mocCA190924_1	24			know	two-place-taɢan_intr	yes	sentential	no	not_applicable	
+mocCA190924_1	24			wake_up	two-place	yes	pron_1st_sg	no	not_applicable	
+mocCA190924_1	25	najaːlqa napaʁaɣineʔ  naʔhe la eʰkwela  kaʔ im ɾetaqatot ken doqolaseʔ	que mis hijo estudien en  la  escuela   y ellos simpre me hablan en castilla	transfer_knowledge	one-place	not_applicable	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	25			talk	one-place-ext	yes	pron_1st_sg	no	not_applicable	
+mocCA190924_1	26	qajim na doqoʃi qajka sasoviʔ ʃinaken           sasoviʔ maʔ poiɲom na laqaːtqa na doqoʃe	y yo no alcanso a los criollo, yo siempre dije  no llego porque hablan muy profundo los criollos	arrive	one-place	not_applicable	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	26			arrive	one-place	not_applicable	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	27	qam ɲaːtʃik ɾanem naɣi  ɸeloqotaɣit ɲiːaːlek qaʔa	pero mi agradecimiento que asi como hoy que estoy con mi hijo	be_next_to	one-place-ext	yes	nominal	yes	ɲi	
+mocCA190924_1	28	ʔwe ka iwaːnaʁanaʁak  tʃiqot ka ɲiwenataʁak ɾa iwaːnaʁanaʁak  ma̰ʔ ka ʒapaʁaɣin ka sadenataʁan	y mi vision es que yo pueda darle mi vision a mi me enseñaron y yo recién pensé	transfer_knowledge	two-place	no	zero	no	not_applicable	
+mocCA190924_1	28			know	two-place-taɢan_intr	no	zero	no	not_applicable	
+mocCA190924_1	29	hɪk so joʁoɾik         naɣi na seβeta̰ʔa qajka qajka ka joʁoɾik	se fue mi sufrimiento  donde estoy ahora no hay sufrimiento	go	one-place	not_applicable	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	29			be	one-place-ext	yes	morphological	not_applicable	not_applicable	
+mocCA190924_1	29			exist.neg	one-place	not_applicable	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	30	ka iɾa ɾa iwaːʁanaʁanaʁak keɾa satʃikotaɣe	eso de lo que vi  de donde vengo	depart	one-place-ext	yes	morphological	not_applicable	not_applicable	
+mocCA190924_1	31	so soʔe naʁa mil novesiten otʃenta y treʰ  ka sakona ɲiβoɾa keteʁajolom	un dia del año 1983 y nos unimos, mi esposa era muy joven	be_cop	avalent	not_applicable	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	31			take	two-place	yes	nominal	no	not_applicable	
+mocCA190924_1	32	peɾo saqaːtaʁanem ɾa iʃiɾa sotawa soʔuenataʁantak  qaʔnak waːʔ qamiʔ jakoneʔ ʃiɣiɣe	pero le conté que podía ayudar trabajando          y ella dijoː bueno, sí me voy con vos	speak	two-place-aɢan_intr-ext	yes	sentential	yes	ɾa	the P argument is only DO
+mocCA190924_1	32			help	two-place	yes	zero_anaphora	no	not_applicable	
+mocCA190924_1	32			work	one-place-taɢan_intr	no	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	32			say	two-place	yes	sentential	no	not_applicable	
+mocCA190924_1	32			take	two-place	yes	pron_2nd_sg	no	not_applicable	
+mocCA190924_1	32			go	one-place-ext	yes	morphological	not_applicable	not_applicable	
+mocCA190924_1	33	kaʔ naɣi weːtaina we naqaɾaʔa	y ahora está acá y tenemos nuestra casa	be	one-place	not_applicable	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	34	kaʔ we ka qaʔnaːtʃiɣeʁak tʃikot ka qaɾtaʔ maɾqoːtʃiɣi jaːnem kal naːtʃiɣeʁak ka jaːlek	y gracias damos cuando un padre da a su hijo de lo que quiere	exist	one-place	not_applicable	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	34			depart	one-place	not_applicable	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	34			attach	one-place-ext	yes	zero_anaphora	not_applicable	not_applicable	
+mocCA190924_1	34			give	three-place	yes	nominal	no	not_applicable	
+mocCA190924_1	35	kaiɾa ɾa jaqaːtaʁanaʁak na naʔʁa             	eso es de lo que puedo contarle en este día  24 de septiembre	be_cop	avalent	not_applicable	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	36	soleːntaʁantaːk kaʔ weːta ina ɲi iβaːnatek doqolek         da jaʔdenta ɾa ɲouenataʁak	estoy recordando entonces ahora que está mi amigo criollo  él sabe lo que me pasó un día	remember	two-place-taɢan_intr	no	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	36			be	one-place	not_applicable	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	36			know	two-place	yes	nominal	yes	ɾa	
+mocCA190924_1	37	we sonaʁaː roqoitʃiɣomta ɲowenataʁak qam jim noviɾetaʔa ka ʒotawantak ken	y que yo estaba flojo un dia, estaba mal y él siempre me llegaba y/para ayudarme	exist	one-place	not_applicable	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	37			come	one-place-ext	yes	pron_1st_sg	not_applicable	not_applicable	
+mocCA190924_1	37			help	two-place	yes	zero_anaphora	not_applicable	not_applicable	
+mocCA190924_1	38	waʔɲa naɲaːnoʎiʔ qa̰ʔ ɲitontaːken la'ʔatlaseβete	y bueno, cuando él me daba algo yo me ponía contento porque él me daba para la carne	give	three-place	yes	morphological	no	not_applicable	
+mocCA190924_1	38			be_happy	one-place	not_applicable	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	39	kaʔˈnem naˈɣi naˈɣi weːtaˈɲi najaˈʔa	y ahora, así como hoy él está conmigo en mi casa	be	one-place	not_applicable	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	40	ka we ka ɲaʔaːtʃik maʔ ɲapaʁaɣintaʔpɣeʔ  da qaɾeloʁojaʁak saʔqataʁantapeɣe qajka ka iʔɣentaβa qaɾeloʁojaʁak	y gracias a que nos enseñamos de nuestra costumbre yo le estoy comentado que nadie puede igualar nuestra costumbre	transfer_knowledge	two-place	yes	nominal	yes	ɾa	
+mocCA190924_1	40			speak	two-place-aɢan_intr-ext	yes	morphological	no	not_applicable	
+mocCA190924_1	40			be_equal	two-place	yes	nominal	no	not_applicable	
+mocCA190924_1	41	jatom qoʎiɣitaʁa londeɣeʁat  peɾo ranem ɲiɣi ɲaqataʁantaʔpegɪ kaʔ  noqoʔin kal leβaːnaʁanaʁak	incredulidad grande          pero así como ahora que estamos hablando y aumenta su visión	speak	two-place-aɢan_intr-ext	yes	morphological	no	not_applicable	
+mocCA190924_1	41			augment	one-place	not_applicable	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	42	ɲaʔaːtʃik gɾacia   aha jaʔdentanaq qaɾowoʔ paɾaʁanaʁajkipi	gracias, gracias   sí, saben nuestros hermanos cazadores	know	two-place	yes	nominal	no 	not_applicable	
+mocCA190924_1	43	da iʃiɾa ɲamaʁatqatʃiɣiɲi ɾasot paɾaʁanak              donak iʒi ɲiːaːlek	que no podemos alistarnos bien cuando salimos a cazar  así como dijo mi hijo recién	get_redy	one-place	not_applicable	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	43			move_feet	one-place	not_applicable	not_applicable	not_applicable	not_applicable	
+mocCA190924_1	43			say	two-place	yes	sentential	not_applicable	not_applicable	
+mocCA190924_1	44	qajaʃiːla so laʔanoʔoːtʃi reloqota na isiɣijak	se le pide permiso al dios del monte que es el que cuida todos los animales del monte	ask_for_permission	two-place	yes	nominal	yes	so	
+mocCA190924_1	44			take_care	two-place	yes	nominal	yes	na	
+mocCA190924_1	45	qaʔ ka dʒapaʁaɣiniɣe peːʔ  ɲovirtaʔ naʔoːtʃi naɲaːɲi ka sedaːntake	y me enseñó el abuelo      llego al monte y digo: dame lo que estoy buscando	transfer_knowledge	two-place	yes	morphological	no	not_applicable	
+mocCA190924_1	45			arrive	one-place-ext	yes	nominal	no	not_applicable	
+mocCA190924_1	45			give	three-place	yes	sentential	yes	ka	
+mocCA190924_1	45			look_for	two-place	yes	zero	no	not_applicable	
+mocCA190924_1	46	retaʁajaʁak kaʔ qom paɾaʁanaʁajk  peːʔ naɲaːɲi kaʔhe iʔsiɣijak	así dice el hombre cazador        abuelo, dame el animal	give	three-place	yes	nominal	yes	ka	
+mocCA190924_1	47	qaʔ maʔle sikijaʁantak ka ka iβoɾa        ka qajka ka loʋik qaɾaβ sasaʃilaʁanaq	así le voy a dar de comer a mi compañera  así es todo fácil pero si no pedimos	eat	two-place-ɢan_intr	yes	nominal	yes	ka	
+mocCA190924_1	47			ask_for_permission	two-place-ɢan_intr	no	zero	no	not_applicable	
+mocCA190924_1	48	jatoʁ weɾa loviːʔk masasaʃilaq soʁo laʔanaʔoːtʃi	así cuesta mucho, nada podemos hacer, porque no le pedimos al dueño del monte	ask_for_permission	two-place	yes	nominal	yes	so	
+mocCA190924_1	49	reloqota na isiɣijak                                     	porque él es el que cuida a todo los animales del monte  	take_care	two-place	yes	nominal	yes	na	

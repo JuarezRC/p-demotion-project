@@ -1,0 +1,164 @@
+---
+title: "p-demotion-discourse"
+author: "Cristian R. Juárez"
+date: "2025-10-17"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+```{r}
+library(tidyverse)
+library(viridis)
+library(viridisLite)
+```
+
+
+```{r}
+mocCA190924 <- read.delim("/Users/cristian/Documents/postdocs/research/abst_pprs_docmnt/2025-pdemot-proposal/raw_data/mocCA190924_text.tsv", sep = "\t", header = T)
+# glimpse(mocCA190924)
+head(mocCA190924)
+```
+
+```{r}
+mocCA190924 |> 
+  filter(!is.na(val_type), val_type != "") |>
+    count(val_type) |>
+    mutate(proportion = n / sum(n)) |>
+  arrange(proportion) |>
+ggplot(aes(x = reorder( val_type, proportion), y = proportion, fill = proportion)) +
+  geom_bar(stat = "identity") +
+  scale_fill_viridis_c(option = "D") +
+#  scale_fill_gradient(low = "gray90", high = "gray10") +
+  labs(title = "Proportion of Each val_type",
+       x = "val_type",
+       y = "Proportion") +
+  theme_minimal() +
+  theme(legend.position = "none", axis.text.x = element_text(angle = 45, hjust = 1))  # Tilt labels 45 degrees)
+
+```
+
+- Example to test correspondences between 
+
+```{r}
+# Filter out 'not_applicable' values
+mocCA190924_filtered <- mocCA190924 %>%
+  filter( P_arg != "not_applicable", P_arg != "",
+         expression_type != "not_applicable", expression_type != "",
+         !is.na(val_type), val_type != "",
+        !is.na(P_arg),
+         !is.na(expression_type))
+
+view(mocCA190924_filtered)
+
+
+# Create contingency table
+contingency_p_expression <- mocCA190924_filtered %>%
+  count(expression_type,val_type) |>
+   arrange(desc(n))
+
+contingency_p_expression
+
+# I need to filter everything again before continuing
+contingency_table_chi <- contingency_p_expression |>
+count(expression_type, val_type) %>%
+  pivot_wider(names_from = val_type, values_from = n, values_fill = 0) %>%
+  column_to_rownames("expression_type")
+contingency_table_chi
+
+# Step 2: Run chi-squared test
+chisq_result <- chisq.test(as.matrix(contingency_table_chi))
+
+chisq_result
+
+
+# Plot heatmap
+ggplot(contingency_p_expression, aes(x = expression_type, y = P_arg, fill = n)) +
+  geom_tile(color = "white") +
+  scale_fill_viridis_c(option = "D") +
+  labs(title = "Interaction between P_arg and expression_type (excluding not_applicable)",
+       x = "expression_type",
+       y = "P_arg",
+       fill = "Count") +
+  theme_minimal()
+
+
+# Table: verb_in_sentence vs val_type
+contingency_verb_val  <- mocCA190924 %>%
+  filter(!is.na(verb_in_sentence), verb_in_sentence != "",
+         !is.na(val_type), val_type != "") %>%
+  count(verb_in_sentence, val_type) %>%
+  pivot_wider(names_from = val_type, values_from = n, values_fill = 0)
+ contingency_verb_val
+```
+
+
+```{r}
+# Table: val_type vs P_arg
+mocCA190924 %>%
+  filter(!is.na(val_type), val_type != "",
+         !is.na(P_arg), P_arg != "") %>%
+  count(val_type, P_arg) %>%
+  arrange(desc(n)) |>
+  pivot_wider(names_from = P_arg, values_from = n, values_fill = 0)
+```
+
+
+```{r}
+mocCA190924 %>%
+filter(!is.na(val_type), val_type != "",
+         !is.na(P_arg), P_arg != "") %>%
+  count(val_type, P_arg) %>%
+  pivot_wider(names_from = P_arg, values_from = n, values_fill = 0) %>%
+  mutate(row_total = rowSums(across(where(is.numeric)))) %>%
+  arrange(desc(row_total))
+
+```
+
+
+```{r}
+# Load tidyverse
+library(tidyverse)
+
+# Assuming your filtered dataset is called `df_filtered`
+# Step 1: Create contingency table
+contingency_table <- mocCA190924 %>%
+  filter(!is.na(expression_type), expression_type != "", expression_type != "not_applicable",
+         !is.na(val_type), val_type != "") %>%
+  count(expression_type, val_type) %>%
+  pivot_wider(names_from = val_type, values_from = n, values_fill = 0) %>%
+  column_to_rownames("expression_type")
+
+as.matrix(contingency_table)
+View(contingency_table)
+
+# Step 2: Run chi-squared test
+chisq_result <- chisq.test(as.matrix(contingency_table))
+
+# Step 3: View results
+chisq_result
+```
+

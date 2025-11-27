@@ -1,0 +1,139 @@
+\begin{thebibliography}{19}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\providecommand{\urlprefix}{}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Aikhenvald(2000)}]{Aikhenvald2000}
+Aikhenvald, Alexandra. 2000.
+\newblock \emph{Classifiers: {{A Typology}} of {{Noun Categorization
+  Devices}}}.
+\newblock Oxford: Oxford University Press.
+\newblock \doi{10.1353/lan.2003.0084}.
+
+\bibitem[{Califa(2014)}]{califa2014}
+Califa, Mart{\'i}n. 2014.
+\newblock {La estructura argumental preferida en mocov\'i (guaycur\'u)}.
+\newblock \emph{Signo y Se\~na} 25. 9--34.
+\newblock \doi{10.34096/sys.n25.3065}.
+
+\bibitem[{Carpio(2012)}]{carpio2012a}
+Carpio, Mar{\'i}a~Bel{\'e}n. 2012.
+\newblock \emph{{Fonolog\'ia y morfosintaxis de la lengua hablada por grupos
+  tobas en el oeste de Formosa (Argentina)}}.
+\newblock M\"unchen: LINCOM.
+
+\bibitem[{Carpio \& Censabella(2012)}]{carpio.censabella2012}
+Carpio, Mar{\'i}a~Bel{\'e}n \& Marisa Censabella. 2012.
+\newblock Clauses as Noun Modifiers in {{Toba}} ({{Guaycuruan}}).
+\newblock In Bernard {and} Zarina Estrada-Fern{\'a}ndez Comrie (ed.),
+  \emph{Relative {{Clauses}} in {{Languages}} of the {{Americas}}},
+  Amsterdam/Philadelphia: John Benjamins.
+
+\bibitem[{Carri{\'o}(2009)}]{carrio2009}
+Carri{\'o}, Cintia. 2009.
+\newblock \emph{{Mirada generativa a la lengua mocov\'i (familia guaycur\'u
+  )}}: Universidad Nacional de C\'ordoba PhD dissertation.
+
+\bibitem[{Censabella(2002)}]{censabella2002}
+Censabella, Marisa. 2002.
+\newblock \emph{{Descripci\'on funcional de un corpus en lengua toba (familia
+  Guaycur\'u, Argentina). Sistema fonol\'ogico, clases sint\'acticas y
+  derivaci\'on. Aspectos de sincron\'ia din\'amica.}}: Universidad Nacional de
+  C\'ordoba {Ph.D. Dissertaion}.
+
+\bibitem[{Censabella(2008)}]{Censabella2008}
+Censabella, Marisa. 2008.
+\newblock {Derivaci\'on causativa en toba}.
+\newblock In Zarina {Estrada-Fern{\'a}ndez}, Soren Wichmann, Claudine Chamoreau
+  \& Albert {\'A}lvarez-Gonz{\'a}lez (eds.), \emph{{Studies in Voice and
+  Transitivity}}, 103--123. Hermosillo: Universidad de Sonora.
+
+\bibitem[{Comrie et~al.(2015)Comrie, Hartmann, Haspelmath, Malchukov \&
+  Wichmann}]{comrie.etal2015}
+Comrie, Bernard, Iren Hartmann, Martin Haspelmath, Andrej Malchukov \& S{\o}ren
+  Wichmann. 2015.
+\newblock Introduction.
+\newblock In \emph{Valency Classes in the World's Languages: Introducing the
+  Framework, and Case Studies from {{Africa}} and {{Eurasia}}}, 1--26. Berlin:
+  De Gruyter Mouton.
+
+\bibitem[{C{\'u}neo \& Messineo(2019)}]{cuneo.messineo2019}
+C{\'u}neo, Paola \& Cristina Messineo. 2019.
+\newblock {Orden de palabras, posici\'on del objeto y estructura de la
+  informaci\'on en toba/qom (Guaycur\'u)}.
+\newblock In Valeria~A. Belloro (ed.), \emph{{La Interfaz
+  Sintaxis-Pragm\'atica}}, 41--66. De Gruyter.
+\newblock \doi{10.1515/9783110605679-003}.
+\newblock
+  \urlprefix\url{https://www.degruyter.com/document/doi/10.1515/9783110605679-003/html}.
+
+\bibitem[{Dom et~al.(2015)Dom, Segerer \& Bostoen}]{dom.etal2015}
+Dom, Sebastian, Guillaume Segerer \& Koen Bostoen. 2015.
+\newblock Antipassive/Associative Polysemy in {{Cilub\`a}} ({{Bantu}},
+  {{L31a}}): {{A}} Plurality of Relations Analysis.
+\newblock \emph{Studies in Language} 39(2). 354--385.
+\newblock \doi{10.1075/sl.39.2.03dom}.
+
+\bibitem[{Dryer(2007)}]{Dryer2007}
+Dryer, Matthew. 2007.
+\newblock Clause Types.
+\newblock In Timothy Shopen (ed.), \emph{Language {{Typology}} and {{Syntactic
+  Description}}}, vol.~II, 224--275. Cambridge: Cambridge University Press.
+
+\bibitem[{Gonz{\'a}lez(2015)}]{Gonzalez2015}
+Gonz{\'a}lez, Ra{\'u}l. 2015.
+\newblock \emph{Estudio Fonol\'ogico y Morfosint\'actico Del a Lengua Toba
+  Hablada En El Este de La Provincia de {{Formosa}} ({{Argentina}})}.
+\newblock M\"unchen: LINCOM.
+
+\bibitem[{Gualdieri(1998)}]{gualdieri1998}
+Gualdieri, Beatriz. 1998.
+\newblock \emph{Mocovi (Guaicuru): Fonologia e Morfossintaxe}: Universidade
+  Estadual de Campinas PhD dissertation.
+
+\bibitem[{Haude \&
+  {Allassonni{\`e}re-Tang}(2023)}]{haude.allassonniere-tang2023}
+Haude, Katharina \& Marc {Allassonni{\`e}re-Tang}. 2023.
+\newblock Lexical, Pronominal and Zero Argument Encoding in {{Movima}}.
+\newblock In \emph{Topicality and the Shaping of Grammar},
+  \urlprefix\url{https://hal.science/hal-04321761}.
+
+\bibitem[{Malchukov(2015)}]{malchukov2015a}
+Malchukov, Andrej. 2015.
+\newblock Valency Classes and Alternations: Parameters of Variation.
+\newblock In \emph{Valency {{Classes}} in the {{World}}'s {{Languages}}},
+  73--130. Berlin: De Gruyter.
+\newblock \doi{10.1515/9783110338812-007}.
+
+\bibitem[{Messineo \& Porta(2009)}]{messineo.porta2009}
+Messineo, Cristina \& Andr{\'e}s Porta. 2009.
+\newblock {Cl\'ausulas relativas en toba (guaycur\'u)}.
+\newblock \emph{International Journal of American Linguistics} 75(1). 49--68.
+\newblock \doi{10.1086/598206}.
+\newblock \urlprefix\url{https://www.journals.uchicago.edu/doi/10.1086/598206}.
+
+\bibitem[{Mithun(2005{\natexlab{a}})}]{Mithun2005}
+Mithun, Marianne. 2005{\natexlab{a}}.
+\newblock Beyond the Core: {{Typological}} Variation in the Identification of
+  Participants.
+\newblock \emph{International Journal of American Linguistics} 71(4). 445--472.
+
+\bibitem[{Mithun(2005{\natexlab{b}})}]{Mithun2005a}
+Mithun, Marianne. 2005{\natexlab{b}}.
+\newblock On the Assumption of the Sentence as the Basic Unit of Syntactic
+  Structure.
+\newblock In Zygmunt Frajzyngier, Adam Hodges \& David Rood (eds.),
+  \emph{Linguist Diversity and Language Theories}, 169--184.
+  Amsterdam/Philadelphia: John Benjamins.
+
+\bibitem[{Nercesian(2015)}]{Nercesian2015b}
+Nercesian, Ver{\'o}nica. 2015.
+\newblock Matguayan.
+\newblock In Rochelle Lieber \& Pavol Stekauer (eds.), \emph{The Handbook of
+  Derivational Morphology}, 743--766. Oxford: Oxford University Press.
+
+\end{thebibliography}
