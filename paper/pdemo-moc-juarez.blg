@@ -1,56 +1,62 @@
 This is BibTeX, Version 0.99d (TeX Live 2023)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: pdemo-moc-juarez.aux
+Case mismatch error between cite keys juarez2019 and Juarez2019
+---line 155 of file pdemo-moc-juarez.aux
+ : \citation{juarez2019
+ :                     }
+I'm skipping whatever remains of this command
 The style file: unified.linguistic.bst
 Database file #1: /Users/cristian/Documents/bibliotek/ZotMendlybrary.bib
-Repeated entry---line 304 of file /Users/cristian/Documents/bibliotek/ZotMendlybrary.bib
- : @book{aikhenvald2000
- :                     ,
+Repeated entry---line 4029 of file /Users/cristian/Documents/bibliotek/ZotMendlybrary.bib
+ : @incollection{dixon2000
+ :                        ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "??"
-Warning--I didn't find a database entry for "?"
-Warning--I didn't find a database entry for ""
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--missing publisher in haude.allassonniere-tang2023
-You've used 19 entries,
+Warning--empty booktitle in Juarez2019
+Warning--there's a number but no volume in Lopez2017
+Warning--can't use both author and editor fields in Malchukov2010
+Warning--there's a number but no volume in Nichols2004
+You've used 41 entries,
             3150 wiz_defined-function locations,
-            743 strings with 7998 characters,
-and the built_in function-call counts, 11288 in all, are:
-= -- 966
-> -- 341
-< -- 20
-+ -- 119
-- -- 99
-* -- 678
-:= -- 1741
-add.period$ -- 88
-call.type$ -- 19
-change.case$ -- 123
-chr.to.int$ -- 20
-cite$ -- 20
-duplicate$ -- 943
-empty$ -- 954
-format.name$ -- 141
-if$ -- 2345
-int.to.chr$ -- 2
+            877 strings with 11214 characters,
+and the built_in function-call counts, 23866 in all, are:
+= -- 2052
+> -- 696
+< -- 42
++ -- 256
+- -- 201
+* -- 1448
+:= -- 3688
+add.period$ -- 191
+call.type$ -- 41
+change.case$ -- 255
+chr.to.int$ -- 43
+cite$ -- 46
+duplicate$ -- 1985
+empty$ -- 2029
+format.name$ -- 292
+if$ -- 4932
+int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 179
-newline$ -- 109
-num.names$ -- 88
-pop$ -- 378
+missing$ -- 381
+newline$ -- 228
+num.names$ -- 186
+pop$ -- 785
 preamble$ -- 1
-purify$ -- 105
+purify$ -- 225
 quote$ -- 0
-skip$ -- 348
+skip$ -- 707
 stack$ -- 0
-substring$ -- 494
-swap$ -- 437
+substring$ -- 1097
+swap$ -- 921
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 162
-warning$ -- 1
-while$ -- 92
+type$ -- 348
+warning$ -- 5
+while$ -- 199
 width$ -- 0
-write$ -- 273
-(There was 1 error message)
+write$ -- 581
+(There were 2 error messages)

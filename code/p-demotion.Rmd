@@ -1,33 +1,22 @@
 ---
 title: "p-demotion-discourse"
 author: "Cristian R. Juárez"
-date: "2025-10-17"
-output: html_document
+date: "`r Sys.Date()`"
+output:
+  pdf_document: 
+    latex_engine: xelatex
+    keep_tex: true
+    number_sections: true
+geometry: margin=1in
+header-includes:
+  - \usepackage{fontspec}
+  - \setmainfont{Libertinus Serif}
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
 
 ```{r}
@@ -36,129 +25,154 @@ library(viridis)
 library(viridisLite)
 ```
 
+-   Load data and first exploration
 
 ```{r}
-mocCA190924 <- read.delim("/Users/cristian/Documents/postdocs/research/abst_pprs_docmnt/2025-pdemot-proposal/raw_data/mocCA190924_text.tsv", sep = "\t", header = T)
+mocCA190924 <- read.delim("/Users/cristian/Documents/postdocs/research/abst_pprs_docmnt/2025-pdemot-moc/raw_data/mocCA190924_text.tsv", sep = "\t", header = T)
 # glimpse(mocCA190924)
-head(mocCA190924)
+# head(mocCA190924)
 ```
 
-```{r}
+-   Distribution of predicate types (ok)
+
+```{r message=TRUE, warning=TRUE, paged.print=TRUE}
 mocCA190924 |> 
-  filter(!is.na(val_type), val_type != "") |>
-    count(val_type) |>
-    mutate(proportion = n / sum(n)) |>
+  filter(!is.na(val_type), val_type != "", val_type != "avalent" ) |>
+  arrange(val_type) |> 
+   count(val_type) |> 
+    arrange(desc(n)) |>
+  mutate(proportion = n / sum(n)) |>
   arrange(proportion) |>
 ggplot(aes(x = reorder( val_type, proportion), y = proportion, fill = proportion)) +
   geom_bar(stat = "identity") +
-  scale_fill_viridis_c(option = "D") +
-#  scale_fill_gradient(low = "gray90", high = "gray10") +
-  labs(title = "Proportion of Each val_type",
-       x = "val_type",
+# Add counts and proportion in bars  
+geom_text(aes(label = paste0(n, "(", scales::percent(proportion), ")")), 
+            vjust = -0.4,
+            size  = 2.3,
+            color = "black") +
+   scale_fill_viridis_c(option = "D") +
+  
+# If you prefer percentage ticks, use this instead:
+  scale_y_continuous(limits = c(0, 0.5), labels = scales::percent) +
+  scale_y_continuous(limits = c(0, 0.5)) +
+  #scale_fill_gradient(low = "gray90", high = "gray10") +
+  labs(title = "",
+       x = "Predicate type",
        y = "Proportion") +
   theme_minimal() +
-  theme(legend.position = "none", axis.text.x = element_text(angle = 45, hjust = 1))  # Tilt labels 45 degrees)
+  theme( 
+# Panel (plotting area) background
+    panel.background = element_rect(fill = "#F2F2F2", colour = NA),
+    # Add a subtle border around the panel (optional)
+    panel.border = element_rect(fill = NA, colour = "#BDBDBD", size = 0.5),
+  panel.grid.major = element_blank(),
+  panel.grid.minor = element_blank(),
+# Outer background (outside plotting area)
+    plot.background  = element_rect(fill = "white", colour = NA),
+    legend.position = "none", axis.text.x = element_text(angle = 45, hjust = 1),
+axis.title.x = element_text(margin = margin(t = 9, r = 5, b = 0, l = 0)),
+axis.title.y = element_text(margin = margin(t = 9, r = 9, b = 0, l = 0)), 
+)  # Tilt labels 45 degrees)
+
+# Save plot in project's folder
+ggsave(filename = "/Users/cristian/Documents/postdocs/research/abst_pprs_docmnt/2025-pdemot-moc/figures/proportion-predicates.png",
+  plot = last_plot(),
+  width = 7, height = 4,
+  dpi = 600,          # minimum for print
+)
 
 ```
 
-- Example to test correspondences between 
+-   Correspondence of predicates in -ɢan or -taɢan alternations. (ok)
 
 ```{r}
-# Filter out 'not_applicable' values
-mocCA190924_filtered <- mocCA190924 %>%
-  filter( P_arg != "not_applicable", P_arg != "",
-         expression_type != "not_applicable", expression_type != "",
-         !is.na(val_type), val_type != "",
-        !is.na(P_arg),
-         !is.na(expression_type))
-
-view(mocCA190924_filtered)
-
-
-# Create contingency table
-contingency_p_expression <- mocCA190924_filtered %>%
-  count(expression_type,val_type) |>
+ # Table: distribution of predicates in text
+ predicates <- mocCA190924 |> 
+   rename(predicate_type = val_type) |>
+   filter(!is.na(verb_in_sentence), verb_in_sentence != "", str_detect(predicate_type, "-ɢan|-taɢan")) |>  # simplified search with regular expression. Better option
+   count(verb_in_sentence, predicate_type) |> 
    arrange(desc(n))
-
-contingency_p_expression
-
-# I need to filter everything again before continuing
-contingency_table_chi <- contingency_p_expression |>
-count(expression_type, val_type) %>%
-  pivot_wider(names_from = val_type, values_from = n, values_fill = 0) %>%
-  column_to_rownames("expression_type")
-contingency_table_chi
-
-# Step 2: Run chi-squared test
-chisq_result <- chisq.test(as.matrix(contingency_table_chi))
-
-chisq_result
-
-
-# Plot heatmap
-ggplot(contingency_p_expression, aes(x = expression_type, y = P_arg, fill = n)) +
-  geom_tile(color = "white") +
-  scale_fill_viridis_c(option = "D") +
-  labs(title = "Interaction between P_arg and expression_type (excluding not_applicable)",
-       x = "expression_type",
-       y = "P_arg",
-       fill = "Count") +
-  theme_minimal()
-
-
-# Table: verb_in_sentence vs val_type
-contingency_verb_val  <- mocCA190924 %>%
-  filter(!is.na(verb_in_sentence), verb_in_sentence != "",
-         !is.na(val_type), val_type != "") %>%
-  count(verb_in_sentence, val_type) %>%
-  pivot_wider(names_from = val_type, values_from = n, values_fill = 0)
- contingency_verb_val
+ predicates
+ 
+ # Create table for document
+library(xtable) 
+predicates_derived <- xtable(predicates,
+             caption = "Predicates by valency subtype",
+             label   = "tab:predicates")
+print(predicates_derived)
 ```
 
+-   Observe correspondences between expression/abscence of P arguments (ok)
 
 ```{r}
 # Table: val_type vs P_arg
-mocCA190924 %>%
-  filter(!is.na(val_type), val_type != "",
-         !is.na(P_arg), P_arg != "") %>%
-  count(val_type, P_arg) %>%
+p_expression <- mocCA190924 |> 
+   rename(predicate_type = val_type) |> 
+  filter(!is.na(predicate_type), predicate_type != "", str_detect(predicate_type, "-ɢan|-taɢan"),
+         !is.na(P_arg), P_arg != "", P_arg != "not_applicable") |> 
+  count(predicate_type, P_arg) |> 
   arrange(desc(n)) |>
+ mutate( P_arg = recode(P_arg,
+      "yes"            = "P_present",
+     "no"             = "P_absent")) |> 
   pivot_wider(names_from = P_arg, values_from = n, values_fill = 0)
+
+# Check output 
+ p_expression
+
+# Create table for document
+library(xtable) 
+p_expression_tab <- xtable(p_expression,
+             caption = "P expression",
+             label   = "tab:p_expression")
+print(p_expression_tab)
 ```
 
+-   Additional data organization: Test for semantic map (not implemented in the paper)
 
 ```{r}
-mocCA190924 %>%
-filter(!is.na(val_type), val_type != "",
-         !is.na(P_arg), P_arg != "") %>%
-  count(val_type, P_arg) %>%
-  pivot_wider(names_from = P_arg, values_from = n, values_fill = 0) %>%
-  mutate(row_total = rowSums(across(where(is.numeric)))) %>%
-  arrange(desc(row_total))
 
-```
+library(dplyr)
+library(stringr)
+# Optional plotting libs used later:
+# library(ggplot2); library(viridis); library(ggrepel)
 
+# Start from your data frame: mocCA190924
+df_sem <- mocCA190924 %>%
+  filter(
+    !is.na(verb_in_sentence), verb_in_sentence != "",
+    !is.na(val_type), val_type != "", val_type != "not_applicable",
+    val_type != "avalent"                       # you asked to drop this earlier
+  )
 
-```{r}
-# Load tidyverse
-library(tidyverse)
+# Optional: focus on P-demotion-relevant tokens
+# df_sem <- df_sem %>% filter(P_arg == "yes")   # uncomment if you want this restriction
 
-# Assuming your filtered dataset is called `df_filtered`
-# Step 1: Create contingency table
-contingency_table <- mocCA190924 %>%
-  filter(!is.na(expression_type), expression_type != "", expression_type != "not_applicable",
-         !is.na(val_type), val_type != "") %>%
-  count(expression_type, val_type) %>%
+# Optional: keep only valency types that occur >= 2 tokens (stability)
+min_n <- 1
+keep_val <- df_sem %>% count(val_type) %>% filter(n >= min_n) %>% pull(val_type)
+df_sem <- df_sem %>% filter(val_type %in% keep_val)
+
+library(tidyr)
+library(FactoMineR)
+library(factoextra)
+
+# 1) Build contingency table: predicates × valency types
+tab <- df_sem %>%
+  count(verb_in_sentence, val_type) %>%
   pivot_wider(names_from = val_type, values_from = n, values_fill = 0) %>%
-  column_to_rownames("expression_type")
+  tibble::column_to_rownames("verb_in_sentence")
+tab
 
-as.matrix(contingency_table)
-View(contingency_table)
-
-# Step 2: Run chi-squared test
-chisq_result <- chisq.test(as.matrix(contingency_table))
-
-# Step 3: View results
-chisq_result
+# 2) Run CA
+res.ca <- CA(tab, graph = FALSE)
+# 3) Plot a clean biplot (semantic map)
+fviz_ca_biplot(
+  res.ca,
+  repel = TRUE,
+  col.row = "#2b2b2b",   # predicates
+  col.col = "#8c2d04",   # valency types
+  label = "all",
+  title = "Predicate × Valency CA biplot (Mocoví)"
+)
 ```
-
