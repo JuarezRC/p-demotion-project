@@ -1,15 +1,10 @@
+%%%%%%%%%%%%%% LAYOUT & FONTS %%%%%%%%%%%%%%%%%%%%%
+
 \documentclass[12pt]{article}
 \usepackage {setspace}
 \onehalfspacing
 \pagestyle{plain}
 \usepackage{fontspec}% Enable KEYMAN functionality
-
-% \usepackage{fontspec,xltxtra,xunicode}
- %   	\defaultfontfeatures{Mapping=tex-text}
-%\usepackage[utf8]{inputenc}
-%\usepackage[utf8]{fontenc}
-%\setmainfont{Junicode}
-
 \setmainfont{Libertinus Serif}
 %\usepackage{indentfirst}
 \setlength{\parindent}{1cm}
@@ -44,8 +39,6 @@
 \usepackage{subcaption}
 \usepackage{multirow}
 \usepackage{multicol}
-%\usepackage{footnote}
-%\makesavenoteenv{tabular}
 \usepackage{tablefootnote}
 %\setlength{\tabcolsep}{1pt} % default is 6pt for column width
  
@@ -61,11 +54,10 @@
     linkcolor=blue,
     filecolor=blue,      
     urlcolor=blue,
-    citecolor=blue} 
-%\usepackage[hidelinks]{hyperref}%If colors are needed, I have to set up. See this discussion a hypersetuphttps://tex.stackexchange.com/questions/823/remove-ugly-borders-around-clickable-cross-references-and-hyperlinks?noredirect=1&lq=1 
+    citecolor=blue}
 \urlstyle{same}
-
-
+\usepackage{bookmark}
+\bookmarksetup{numbered} %solution for numbered bookmark sections
 
 %%%%%%%%%%%%Glosses & related packages%%%%%%%%%%%%%%%
 %%%\usepackage[inline]{leipzig}
@@ -129,7 +121,7 @@ A small case‑study based on a narrative text provides a first quantitative per
 %Remember that call of complex affixes. Some ideas are important from \citet{dom.etal2015}. Some of the functions her resemble some of the features that linked to antipassive and the correlations of antipassive markers to other domain. Specifically, the notion of 
 
 \section{The Mocoví people and their language}
-Mocoví is part of the Guaycuruan family along with other four languages, three of which are still spoken today, i.e., Kadiwéo, Toba and Pilagá. Mocoví communities are located in northeastern Argentina, as shown in Map \ref{fig:moc-communities}\footnote{Personal elaboration based on the name of Mocoví communities as reported in different studies on Mocoví language and culture; \cite[see, among others,][]{Altman2010,Altman2011,carrio2009,Dalla-CorteCaballero2012,gualdieri1998,grondona1998,iparraguirre2011,Iparraguirre2016,Lopez2017}.}. They are spread out across two neighboring provinces, Chaco and Santa Fe, creating a chain of geographically connected clusters of Mocoví families.
+Mocoví is part of the Guaycuruan family along with other four languages, three of which are still spoken today, i.e., Kadiwéo, Toba and Pilagá. Mocoví communities are located in northeastern Argentina, as shown in Map \ref{fig:moc-communities}\footnote{Personal elaboration based on the name of Mocoví communities as reported in different studies on Mocoví language and culture; see among others, \citet[][]{Altman2010,Altman2011}, \citet{carrio2009}, \cite{Dalla-CorteCaballero2012}, \citet{gualdieri1998}, \citet{grondona1998}, \citet{iparraguirre2011,Iparraguirre2016}, \citet{Lopez2017}.} They are spread out across two neighboring provinces, Chaco and Santa Fe, creating a chain of geographically connected clusters of Mocoví families.
 
 \begin{figure}[H] 
 \centering 
@@ -143,8 +135,8 @@ Mocoví is part of the Guaycuruan family along with other four languages, three 
 Demographically, as one moves further north within the chain of Mocoví communities, it becomes increasingly common  to find families that have been in contact with Toba-speaking communities for over a century or more. This is the case, for example, in the community Cacica Dominga in Colonia Aborigen, which marks one of the northernmost points of the Mocoví community chain in Argentina. Here, Mocoví and Toba families have been in a long-term and intense contact, fostering a complex social organization that also integrates non-indigenous people. The specific social and linguistic outcomes of this long-term contact situation are still in need of further research.
 
 Data included in this study mostly come from what I call Northern Chaco Mocoví, which corresponds to the language as spoken in the rural area of Colonia Aborigen (e.g., Cacica Dominga), and has been subject of a long-term documentation project since 2011 \citep[see][]{Juarez2019}. The large corpora included here deals with controlled and natural speech data collected originally via fieldwork. Northern Chaco Mocoví data include a basic metadata information indicating date of collection and location of the example in the audio-video files e.g., (mocCA160720\_1: 00:31:19). When examples come from a source other than my own collection, this information is also provided in parenthesis for the specific illustration. See also \autoref{sec:supplementary} to know more about the accompanying documentation of this paper, i.e., repository and access to raw data. 
-\subsection{Morphosyntax overview: clause types and argument expression}\label{sec:clause-types}
-This section deals with basic clause types, showing the typical valence-type predicates and the expression their core arguments. The semantic and structural criterion for clause categorization will be relevant to identify the P-demotion effect and sets the annotation schema followed in \autoref{sec:annotation-scheema}. Structurally, the verb complex includes the following morphological elements detailed in \autoref{fig:verbstructure in Northern Chaco Mocoví.}. Relevant for the following discussion are the
+\subsection{Morphosyntactic language profile}\label{sec:morphosynstactic-overview}
+This section deals with basic clause types, showing the typical valence-type predicates and the expression their core arguments. The semantic and structural criterion for clause categorization will be relevant to identify the P-demotion effect and sets the annotation schema followed in \autoref{sec:annotation-scheema}. Structurally, the verb complex includes the following morphological elements detailed in \autoref{fig:verbstructure in Northern Chaco Mocoví.}. Relevant for the following discussion are valence modifiers in positions 1 and 2.
 
 \begin{figure}[h]
 \centering
@@ -172,31 +164,23 @@ This section deals with basic clause types, showing the typical valence-type pre
 \end{figure}
 
 
- Following a traditional view on clause classification, here I define types of clauses by the valence profile of their predicates  \citep{Dryer2007,Mithun2005,Mithun2005a} and  their (morpho)syntactic patterning. This latter feature is in turn recognized by the way in which arguments are treated with respect to verb indexing, word order and oblique flagging. \citep[see][3-4]{comrie.etal2015}. The (morpho-)syntactic pattern of a clause will then serve to recognize clause types such as intransitive and transitive clauses, among other language-specific subtypes. From a typological angle, it is often mentioned that certain classes of predicates are taken to be present in almost all languages, namely mono-valent and bi-valent predicates, whereas  other types of predicates are subject to more language-specific variation, e.g. avalent predicates \citep[][]{Malchukov2010}. Mocoví, and to a large extent its Guaycuruan sister languages, is distinctive in that predicates are lexically categorized as either mono-valent or bi-valent and that these predicate fall into different morphosyntactic patterns. In what follows the major clause types relevant for this study are described.  
+ Following a traditional view on clause classification, here I define types of clauses by the valence profile of their predicates  \citep{Dryer2007,Mithun2005,Mithun2005a} and their (morpho)syntactic patterning. This latter feature is in turn recognized by the way in which arguments are treated with respect to verb indexing, word order and oblique flagging. \citep[see][3-4]{comrie.etal2015}. The (morpho-)syntactic pattern of a clause will then serve to recognize clause types such as intransitive and transitive clauses, among other language-specific subtypes. From a typological angle, it is often mentioned that certain classes of predicates are taken to be present in almost all languages, namely mono-valent and bi-valent predicates, whereas  other types of predicates are subject to more language-specific variation, e.g. avalent predicates \citep[][]{Malchukov2010}. Mocoví, and to a large extent its Guaycuruan sister languages, is distinctive in that predicates are lexically categorized as either mono-valent or bi-valent and that these predicate fall into different morphosyntactic patterns. Arguments, in turn, are defined by the the number of semantic participants required by the predicate and their specific morphosyntactic expression to form a grammatical clause \citep{Song2015}. In what follows, we will see that both verb valence and morphosyntactic encoding of participants work together to recognize core arguments.    
 
-Let us begin with typical one-place predicates. Examples of this type of predicate are \textit{-oʔon} `get married' or \textit{-inta} `be similar' in (\ref{ex:clause_intrans}). In predicates of this class. the main argument expression is the bound person form, which encodes the  single argument (S). Co-nominals or pronominal elements of S arguments tend to be overt only for referent identification. Less relevant for this paper are verbless or non-verbal clauses like \textit{jim ɢoɾatom}, where the juxtaposition of elements suffice for a predication.  
+\subsection{Argument expression and clause types}
+ Let us begin with typical one-place predicates. Examples of this type of predicate are \textit{-oʔon} `get married' or \textit{-inta} `be similar' in (\ref{ex:clause_intrans}) and they require a single participant. The main expression of this participant is the bound person form, i.e., \textit{s-}, which encodes the  syntactic function S. Commonly,  co-nominals or pronominal elements of S arguments tend to be overt only for referent identification. Less relevant for this paper are verbless or non-verbal clauses like \textit{jim ɢoɾatom}, where the juxtaposition of elements suffice for a predication.  
 
 \begin{exe}
  
  \ex One-place predicate clause   
   \gll \textbf{s}-\textbf{oʔon} qam qajka ka \textbf{s}-\textbf{inta} jim ɢoɾa-ta-om \\
  {\First.\I}-get\_married but {\Exist.\Neg} {\DetOne} {\First.\II}-be\_similar {\First.\Sg.\Pron} be\_poor-{\Dur}-{\Ints} \\
- \trans ‘... I got married, but I was not the same, I was very poor...' \hfill (mocCA190924\_1: 00:02:20) \label{ex:clause_intrans}
+ \trans ‘... I got married, but I was not the same, I was very poor...' 
+ \trans \hfill (mocCA190924\_1: 00:02:20) \label{ex:clause_intrans}
 \end{exe}
  
- A slightly different type of clause includes the extended one-place predicate, as in (\ref{ex:extended-oneplace}). This clause takes a one-place predicate as its base but the number of arguments is extended by a locative-orientative suffix (which occur in position 8, see \autoref{fig:verbstructure in Northern Chaco Mocoví.}). In this case, the suffix \textit{-ɡe} entails the locative participant as a core argument of the clause, while keeping the morphological intransitive expression of the S argument. As noted in this example, the extended P argument is expressed morphologically and lexically. Clauses of this type have received a great deal of attention in Guaycuruan languages  and the function of spatial morphology in contexts like these brought novel data to the typologically unusual link between the domain of spatial morphology and valence increasing. 
-   
-\begin{exe}
-
- \ex Extended one-place predicate clause 
- \gll t-a-\textbf{ɡe} \textbf{na} \textbf{ʔoːtʃi} ken ʔwe ka-ta n-akit-ɢak n-akit-take l-oq\\
-  {\Third.\II.\Intr}-go-{\LocThree} {\DetOne} forest {\Exist} {\Adv} {\DetFive}-{?} {\Third.\Poss}-hope-{\Nmlz} {\Third.\Poss}-hope-{\Des} {\Third.\Poss}-food\\
- \trans ‘... she usually went to the forest hoping to receive food...'  
- \trans \hfill (mocCA191010\_1: 00:02:48) \label{ex:extended-oneplace}
-\end{exe}
 
 
- Two-place predicates can also be further split between morphologically basic and extended predicates. The first type  of predicates are like (\ref{ex:clause_trans}) and (\ref{ex:two-place_p3rd}), where  the A argument is verb-indexed and the P argument is overtly expressed  by an independent pronoun or nominals. Syntactically, P arguments tend to precede the predicate when they correspond to speech act participants. On the contrary, third-person P arguments follow the verb and their co-nominal or pronominal expression are expressed as in (\ref{ex:two-place_psap}-\ref{ex:two-place_psap_2}).
+ Two-place predicates  are like (\ref{ex:clause_trans}) and (\ref{ex:two-place_p3rd}), which require two participants, semantically categorized as agent-like and patient-like respectively, and are morphosyntactically expressed in different ways.  The A argument is verb-indexed and the P argument is overtly expressed  by an independent pronoun or nominals. Syntactically, P arguments tend to precede the predicate when they correspond to speech act participants. On the contrary, third-person P arguments follow the verb and their co-nominal or pronominal expression are expressed as in (\ref{ex:two-place_psap}-\ref{ex:two-place_psap_2}).
  
  \begin{exe}
  \ex  Basic two-place predicate clause: 2nd person P
@@ -210,31 +194,73 @@ Let us begin with typical one-place predicates. Examples of this type of predica
 \ex Basic two-place predicate clauses: 3rd person P \label{ex:two-place_p3rd}
 \begin{xlist}
 \ex
-\gll s-oʔkowan-tak \textbf{na} \textbf{isiɡijak} \\
+\gll \textbf{s}-oʔkowan-tak \textbf{na} \textbf{isiɡijak} \\
 	{\First.\I}-chase-{\Prog} {\DetThree} animal \\
 	\trans `... I (usually) was chasing animals...' \hfill{(mocCA191022\_2: 00:03:10)} \label{ex:two-place_psap}
 	
 	\ex 
-	\gll s-aɢan-ɲi \textbf{so} \textbf{i}-\textbf{oɢon}-\textbf{a}  \textbf{n}-\textbf{etʃikse}\\
+	\gll \textbf{s}-aɢan-ɲi \textbf{so} \textbf{i}-\textbf{oɢon}-\textbf{a}  \textbf{n}-\textbf{etʃikse}\\
 	{\First.\I}-leave.alone-{\Dir:\Down} {\DetTwo} {\First.\Poss}-take-{\Nmlz.\Obj.\F} {\Indet.\Poss}-lizard \\
 	\trans `...I left alone my prey, the lizard...' \hfill{(mocCA191022\_2: 00:03:36)} \label{ex:two-place_psap_2}
 \end{xlist}
 \end{exe}
 
-In the second case, similar to one-place predicates, two-place predicates can also occur with locative-orientative morphology or other suffixes encoding P arguments. The effect that locative-directional suffixes have on two-place predicates varies, as these suffixes can simply provide spatial information regarding  the P argument or actually extend the number of arguments. Other suffixes expressing a P argument merely serve to indicate the presence of such argument, indexing non-singular number of the P argument. In (\ref{ex:extended_twoplace_a}), P arguments are indexed by spatial and non-spatial morphology. Here the speaker narrates about his past hunting experience and what kind of animals he used to hunt.  On the one hand, the locative-orientative suffix \textit{-ɡit} entails that the P argument is coming to the A argument and contributes to the change in meaning of the verb root i.e. \textsc{see} $\rightarrow$ \textsc{find}. On the other hand, the sequence \textit{a-lo} simply expresses the multiplicity of entities denoted by the P nominal. This is so regardless of the referential nouns may or may not include plural marking morphology.   
+In addition to the transitive and intransitive basic clauses, there are other different clause types, defined by with what I call here extended arguments \citep[the terminology is inspired by][3-4]{Dixon2000}. In these cases, both basic one-place and two-place predicates can take an specific type of spatial morphology or other suffixes expressing P arguments. The spatial morphology class, in particular, includes the locative-orientative suffixes, which can express not only topological information but also work similar to what is typologically defined as applicative morphology \citep[for an updated discussion of earlier and more recent descriptions of spatial morphology, see][]{juarez2025}.  Observe the contrast in (\ref{ex:one-place-extended}), where the presence of the locative-orientative \textit{-ɡe} with a one-place predicate allows the expression of a participant that could otherwise be included as an oblique-marked nominal. Predicates like these in (\ref{ex:one-place-extended-b}) deviate from the typical one-place predicates in that the addition of spatial morphology calls for an (otherwise) peripheral participant -- namely, a location that is semantically not required by the verb valence -- as a P argument, whose nominal expression is similar to those in (\ref{ex:two-place_p3rd}) above. Thus, in clauses of this type, the argument extension is noted by the additional verb marking that implies a new P argument and by the non-oblique expression of the implied participant. It should also be noted that predicates of this kind are by default categorized  as one-place predicates, hence the intransitive glossing for the original S argument of the basic clause is maintained.  
+
+\begin{exe}
+\ex Extended one-place predicate clause \label{ex:one-place-extended}
+\begin{xlist}
+\ex
+\gll qomiɾ \textbf{qaɾ}-oʔtʃi (ke-na nadʒik) \\
+	{\First\Pl.\Pron} {\First.\Pl.\I.\Intr}-be\_afraid {\Obl}-{\DetThree} track \\
+	\trans `We are afraid of that track' \hfill{(mocCA120706: 00:50:42)} \label{ex:one-place-extended-a}
+	
+	\ex
+\gll qomiɾ \textbf{qaɾ}-oʔtʃi-\textbf{ɡe} (\Ungr ke)-na nadʒik \\
+	{\First\Pl.\Pron} {\First.\Pl.\I.\Intr}-be\_afraid-{\LocThree}	 {\Obl}-{\DetThree} track \\
+	\trans `We fear that track' \hfill{(mocCA120706: 00:51:34)} \label{ex:one-place-extended-b}
+\end{xlist}
+\end{exe}
+
+
+ % More specifically, the suffix \textit{-ɡe}, for example, entails the locative participant as a core argument of the clause, while keeping the morphological intransitive expression of the S argument. As noted in this example, the extended P argument is expressed morphologically and lexically. Clauses of this type have received a great deal of attention in Guaycuruan languages  and the function of spatial morphology in contexts like these brought novel data to the typologically unusual link between the domain of spatial morphology and valence increasing. 
+ 
+Building on the morphosyntactic evidence presented in (\ref{ex:one-place-extended}), cases like (\ref{ex:oneplace-extended-go}), which includes a movement predicate, also fall within the domain of extended one-place predicates. Additionally, predicates of this type contrast with semantically similar predicates of the kind in (\ref{ex:move-directional}). Unlike predicates with locative-orientative markers, one-place predicates including directional morphology naturally occur with a peripheral locative participant expressed as an oblique. 
+   
+\begin{exe}
+ \ex Extended one-place predicate clause
+ \gll t-a-\textbf{ɡe} \textbf{na} \textbf{ʔoːtʃi} ken ʔwe ka-ta n-akit-ɢak n-akit-take l-oq\\
+  {\Third.\II.\Intr}-go-{\LocThree} {\DetOne} forest  {\Adv} {\Exist} {\DetFive}-{?} {\Third.\Indet.\Poss}-hope-{\Nmlz} {\Third.\Indet.\Poss}-hope-{\Des} {\Third.\Poss}-food\\
+ \trans ‘...she usually went to the forest hoping to receive food...'  
+ \trans \hfill (mocCA191010\_1: 00:02:48) \label{ex:oneplace-extended-go}
+\end{exe}
+
+
+\begin{exe}
+\ex \label{ex:move-directional}
+\gll qamiɾ k-iɾ-\textbf{ʃiɡem} \textbf{ke}-na qopaq \\
+ {\Second\Sg.\Pron} move-{\Second.\Sg.\II}-{\Dir:\Up} {\Obl}-{\DetThree} tree 
+ \\
+ \trans `Did you climb the tree?' \hfill (mocCA120717: 00:36:28)
+\end{exe}
+
+
+As mentioned before, two-place predicates can also combine with locative-orientative morphology or other suffixes to express P arguments. The effect that locative-directional suffixes have on two-place predicates varies, as these suffixes can simply provide spatial information regarding  the P argument or actually extend the number of arguments. Other suffixes expressing a P argument merely serve to indicate the presence of such argument, indexing non-singular number of the P argument. The chain of clauses in (\ref{ex:extended_twoplace_a}) illustrates the use of both P argument expressing morphology. Here the speaker narrates about his past hunting experience and what kind of animals he used to hunt; in this context, the connected clauses should be viewed as statements about general, recurring, former events.  
+
+On the one hand, the locative-orientative suffix \textit{-ɡit} entails that the P argument is coming to the A argument and contributes to the change in meaning of the verb root i.e. \textsc{see} $\rightarrow$ \textsc{find}. Strictly speaking, there  is no addition of a new argument via the spatial marker (as with one-place predicates), but rather a semantic elaboration on how the P argument interacts with the A. On the other hand, the sequence \textit{a-lo} simply expresses the multiplicity of entities in the reference of the P nominal. Although both instances of the nominal `lizard' do not receive any plural marking, the verb morphology indicating non-singular referentiality contribute to stablish the number contrast given in the translation.\footnote{To better understand the English translation offered in (\ref{ex:extended_twoplace_a}), the semantic distinction between \textit{kind-referring} and \textit{object-referring} terms can be particularly helpful. There is a large discussion in the field of semantics on these terms -- which is part of a topic far beyond the scope of this paper --, thus, here I follow ideas in \cite{krifka.etal1995}. The use of \textit{ana ntʃikse} with the predicate \textit{ɲawangit} appears to be of the \textit{kind-referring} expression, as the reference is not to the specific animal, but the genus `lizard'. By contrast, the second use of the same nominal with the predicate \textit{sakontaalo} is \textit{object-referring} in the sense that reference narrow down to the specific animals contained in the \textit{kind}. Additionally, consider that natural discourse usually shows unconditioned variation in gender and number expression in nominals. Thus, the second use of \textit{na tʃikse} should not be interpreted as referring to a single, indentifiable `lizard', but rather to many of them \citep[see also][]{krifka2025}}  
 
 \begin{exe}
 \ex Extended two-place predicates \label{ex:extended_twoplace_a}
 \gll s-akon-ta-\textbf{a}-\textbf{lo} \textbf{na} \textbf{ʃilqajk}-\textbf{qa} ɲ-awan-\textbf{ɡit} \textbf{a}-\textbf{na} \textbf{n}-\textbf{tʃikse} s-akon-ta-\textbf{a}-\textbf{lo} \textbf{na} \textbf{tʃikse}  \\
-{\First.\II}-take-{\Dur}-{\Arg}-{\Arg.\Pl} {\DetThree} otter-{\Pl} {\First. \III}-see-{\LocThree} {\F}-{\DetThree} {\Indet.\Poss}-lizard {\First.\II}-take-{\Dur}-{\Arg}-{\Arg.\Pl} {\DetThree} lizard\\	
-\trans `...I took otters, I found a lizard and I took a lizard...' \hfill(mocCA190924\_1: 00:03:30)
+{\First.\II}-take-{\Dur}-{\Arg}-{\Arg.\Pl} {\DetThree} otter-{\Pl} {\First.\III}-see-{\LocThree} {\F}-{\DetThree} {\Indet.\Poss}-lizard {\First.\II}-take-{\Dur}-{\Arg}-{\Arg.\Pl} {\DetThree} lizard\\	
+\trans `...(back then when I hunt) I took otters, I found (a) lizard and I took the lizards...'  \trans \hfill(mocCA190924\_1: 00:03:30)
 \end{exe}
 
 
  Natural discourse examples presented in this section show that while the S and A arguments are invariably indexed in the verb complex, the overt realization of a P argument can be either only nominal or pronominal, or can be co-expressed by verbal morphology and its corresponding nominal or pronominal expression. This argument expression variability is relevant for the data annotation and is implemented for capturing the range of possibilities for expressing P argument in discourse.  
  
 \subsection{The expression of P arguments: nominal determiners and their uses}
- A key feature of the nominal expression of core arguments involves the preceding nominal determiner. The closed class of six nominal determiners encodes different semantic values of the nominal referent, showing a clustering of salient typological features \citep[cf.][178-181]{Aikhenvald2000}. These semantic features include presence vs. absence, position (lying, standing or sitting) and movement/proximity (coming to the speaker or away from the speaker). 
+ A key feature of the nominal expression of core arguments involves the preceding nominal determiner.\footnote{These grammatical elements have been referred to differently in the previous studies on Mocoví and  the other Guaycuruan languages. They are labelled `classifiers' in Pilagá (\citealt[][112-113]{Vidal2001}, \citealt{payne.vidal2020}) and `demonstratives' in Toba \citep[][147-149]{Censabella2002} and Kadiwéo \citep[][61-63]{Sandalo1997}. In Mocoví specifically, the labels of `deictic roots' \citep[][79]{Grondona1998}, `classifiers'  \citep[][]{Gualdieri1998} and `demonstratives' \citep{Carrio2009} have been used to refer to what I call determiners here.} The closed class of six nominal determiners encodes different semantic parameters related to the nominal referent and can be selected on speech context basis. As a whole, the clustering of semantic parameters in the paradigm of nominal determiners represents a salient typological feature of the nominal domain \citep[cf.][178-181]{Aikhenvald2000}. These semantic features include presence vs. absence, position (lying, standing or sitting) and movement/proximity (coming to the speaker or away from the speaker). 
  
  \begin{tabularx}{\textwidth}{cccl} 
 \caption{Northern Chaco Mocoví nominal determiners.}\\\toprule\toprule
@@ -676,7 +702,7 @@ First, note that these elements exhibit complementary and asymmetric distributio
 \section{Discourse distribution: a case study}{\label{sec:annotation-scheema}}
 One aspect that has not received much attention in relation to agent foregrounding constructions concerns their discourse distribution. This section therefore examines the actual occurrence of \textit{‑ɢan} and \textit{‑taɢan} in natural speech. The goal is purely descriptive: to determine how frequent the different types of agent foregrounding predicates are in discourse, and to identify any correspondence between predicate types and the expression of P arguments  \citep[for a similar example, see][]{haude.allassonniere-tang2023}. Although these questions are basic, such a quantitative investigation has not previously been carried out for valence‑changing operations in Mocoví or in other Guaycuruan languages. There are, however, relevant studies on related topics, such as counts of lexical argument expression in Mocoví \citep[see][]{califa2014} and Chaco Toba's discourse \citep[see][]{cuneo.messineo2019}.
 
-The case study presented here is based on a single narrative discourse, used as a first step to complement the qualitative observations on the distribution and function of agent foregrounding constructions. The narrative has the characteristics of a monologue, in which the speaker recalls various past and present life events. Building on the clause types and patterns of argument expression described in section. Building on the clause types and patterns of argument expression described in \autoref{sec:clause-types}, each clause is annotated according to the following parameters: (i) predicate meaning, (ii) valence type, (iii) P‑argument expression, and (iv) the type of expression used for the P argument. An additional parameter is applied only to third‑person P arguments, identifying the determiner type used in nominal P‑argument expressions. This variable is intended to capture whether some of the semantic properties encoded by nominal determiners show a correspondence with the types of P‑argument expressions attested in discourse.
+The case study presented here is based on a single narrative discourse, used as a first step to complement the qualitative observations on the distribution and function of agent foregrounding constructions. The narrative has the characteristics of a monologue, in which the speaker recalls various past and present life events. Building on the clause types and patterns of argument expression described in \autoref{sec:clause-types}, each clause is annotated according to the following parameters: (i) predicate meaning, (ii) valence type, (iii) P‑argument expression, and (iv) the type of expression used for the P argument. An additional parameter is applied only to third‑person P arguments, identifying the determiner type used in nominal P‑argument expressions. This variable is intended to capture whether some of the semantic properties encoded by nominal determiners show a correspondence with the types of P‑argument expressions attested in discourse.
 
 \begin{figure}[H] 
 \centering 
@@ -768,7 +794,7 @@ Finally, the discourse‑based analysis shows that agent foregrounding construct
 \begin{itemize}
 \item The complete project including the raw data, annotation and code for data processing is in the following public repository \url{https://github.com/JuarezRC/p-demotion-project.git}
 
-\item  The natural discourse analyzed in this work is part of the open access audiovisual collection \textit{Documentation and Description of Northern Chaco Mocoví} \citep{juarez2019}. Access to the raw audio, video and pictures of the recording session are available here \url{https://www.elararchive.org/uncategorized/SO_9538d856-a984-491d-87c1-86ab9ed2ce74/}
+\item  The natural discourse analyzed in this work is part of the open access audiovisual collection \textit{Documentation and Description of Northern Chaco Mocoví} \citep{Juarez2019}. Access to the raw audio, video and pictures of the recording session are available here \url{https://www.elararchive.org/uncategorized/SO_9538d856-a984-491d-87c1-86ab9ed2ce74/}
 \end{itemize} 
 %%%%%%%%GLOSSES%%%%
 \printglossaries
